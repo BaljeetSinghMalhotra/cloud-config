@@ -22,7 +22,7 @@ spring:
         - id: Address
           uri: lb://ADDRESS/
           predicates:
-            - Path=/api/Address** 
+            - Path=/api/Address/** 
 management:
   endpoints:
     web:
