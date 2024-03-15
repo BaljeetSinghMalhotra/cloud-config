@@ -14,7 +14,11 @@ spring:
         - id: Internal
           uri: lb://SAMPLE-MS-1/
           predicates:
-            - Path=/api/internal/**      
+            - Path=/api/internal/** 
+        - id: UserDetail
+          uri: lb://USER-DETAIL/
+          predicates:
+            - Path=/api/User/** 
 management:
   endpoints:
     web:
