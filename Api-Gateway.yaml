@@ -14,10 +14,7 @@ spring:
         - id: Internal
           uri: http://localhost:8088/
           predicates:
-            - Path=/api/internal/**
-  config: 
-    import: optional:configserver:http://localhost:8888
-        
+            - Path=/api/internal/**      
 management:
   endpoints:
     web:
